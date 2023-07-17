@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    background: linear-gradient(to right, rgba(190, 77, 190, 0.562), rgb(66, 66, 207));
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 16px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.575);
+}
+
+
+.display {
+    padding: 10px;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+
+.display span {
+    font-size: 18px;
+    color: rgba(245, 245, 245, 0.445);
+}
+
+
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.operators {
+    display: flex;
+
+}
+
+
+.operators button {
+    flex: 1 1 0%;
+    background-color: rgb(240, 90, 115);
+    font-weight: 600;
+}
+
+
+.digits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.digits button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 500;
+    flex: 1 1 33.33%;
+
+    /* flex-wrap: wrap; */
+}
